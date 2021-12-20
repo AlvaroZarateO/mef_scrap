@@ -1,4 +1,4 @@
-# Scrappeando de la Consulta Amigable: mef_scrap
+# Scrapping de la Consulta Amigable: mef_scrap
 
 Código de Python para scrappear de la "Consulta Amigable" (Gasto Presupuestal - Actualización diaria) del Ministerio de Economía y Finanzas (MEF).
 
