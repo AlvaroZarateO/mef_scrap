@@ -147,8 +147,8 @@ for k in range(2015, 2021):
  
         # Se trata de una iteración doble
         
-        # Primero, se crea un bucle para contar el número de distritos habidos en el departamento.
-        # Para ello, también se crea una función para hacer click en los distritos
+        # Primero, se crea un bucle para contar el número de municipalidades habidas en el departamento.
+        # Para ello, también se crea una función para hacer click en las municipalidades
         dist = wd.find_elements_by_xpath("/html/body/form/div[4]/div[3]/div[3]/div/table[2]/tbody/tr") # Notar que está incompleto
         time.sleep(1.5)
 
@@ -159,7 +159,7 @@ for k in range(2015, 2021):
             
             cuenta = cuenta + 1 # Actualizamos cuenta
         
-        # Segundo, habiendo hallado el número, se hace el siguiente bucle:
+        # Segundo, habiendo hallado el número de municipalidades, se hace el siguiente bucle:
         for d in range(1, cuenta):
             distrito = wd.find_element_by_xpath("/html/body/form/div[4]/div[3]/div[3]/div/table[2]/tbody/tr["+str(d) +"]") # Selecciona cada distritos, pasando en orden, uno por uno
             dist2 = ''.join([j for j in distrito.text if not j.isdigit()])
