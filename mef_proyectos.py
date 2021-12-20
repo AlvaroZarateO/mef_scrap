@@ -22,7 +22,7 @@ wd = webdriver.Chrome(chromedriver)
 for k in range(2015, 2021): # En este caso se colocaron los años 2015 - 2020
     wd.get("http://apps5.mineco.gob.pe/transparencia/Navegador/default.aspx")
 
-    # Escogiendo año en el desplegable (luego hacer bucle por año)
+    # Escogiendo el año en el desplegable (luego hacer bucle por año)
     frame = wd.find_element_by_xpath('//*[@id="frame0"]')
     wd.switch_to.frame(frame)
     
@@ -41,8 +41,8 @@ for k in range(2015, 2021): # En este caso se colocaron los años 2015 - 2020
     
     # Seleccionando Función (en este caso: Agropecuaria)
     wd.find_element_by_xpath("//*[@id='ctl00_CPH1_BtnFuncion']").click() # Ordena la tabla en orden alfabético de las funciones
-    wd.find_element_by_xpath("/html/body/form/div[4]/div[3]/div[3]/div/table[1]/tbody/tr[1]/td[2]").click()
-    time.sleep(1.5) # No olvidar, sino el código da error
+    wd.find_element_by_xpath("/html/body/form/div[4]/div[3]/div[3]/div/table[1]/tbody/tr[1]/td[2]").click() # En este caso, al ser "Agropecuaria" la primera función, se coloca tr[1]
+    time.sleep(1.5) # No olvidar, sino el código muestra un error (debido a que la página no carga muy rápido)
 
     funcion = wd.find_element_by_xpath("/html/body/form/div[4]/div[3]/div[3]/div/table[2]/tbody/tr[1]/td[1]")
     print(funcion)
@@ -79,7 +79,7 @@ for k in range(2015, 2021): # En este caso se colocaron los años 2015 - 2020
 ##############################################################################
 ###################### GOBIERNOS LOCALES (DESAGREGADO) #######################
 
-# En caso se desee ir por cada gobierno local dentro de cada gobierno regional,
+# En caso se desee ir por cada gobierno local dentro de cada departamento,
 # es mejor probar este código
 chromedriver = 'D:/Archivos de Programa/ChromeDriver/chromedriver.exe'
 wd = webdriver.Chrome(chromedriver)
