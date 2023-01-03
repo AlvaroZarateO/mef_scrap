@@ -8,4 +8,4 @@ Asimismo, se construyó una extensión del código que permite obtener todos los
 Finalmente, en caso se necesite otro tipo de información, revisar los comentarios en los que se indican qué elementos (los años o el tipo de Función de los proyectos, por ejemplo)  podrían cambiarse, dependiendo del interés de cada quien.
 
 ------------------------------------------------
-Créditos a @nidominguez, de quien pude guiarme.
+Créditos a @nicoidominguez, de quien pude guiarme.
